@@ -1,11 +1,9 @@
-import { clsx } from "clsx";
+import { SpinLoader } from "../components/SpinLoader";
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
-    <h1 className={clsx(
-      'text-xl', 'font-bold', 'bg-blue-900'
-    )}>
-      Welcome to the Home Page
-    </h1>
+    <div>
+      <SpinLoader componentClasses="min-h-40" />
+    </div>
   );
 }
